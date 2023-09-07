@@ -29,7 +29,7 @@ function Home({ profile, categories, getProfile, getCategories }) {
                 </div>
             ) 
             : (
-                <h2>Loading...</h2>
+                <h2>Cargando...</h2>
             )
         }
       </div>

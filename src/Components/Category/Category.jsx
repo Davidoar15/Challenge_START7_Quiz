@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import style from "./Category.module.css";
 
 function Category({ category }) {
 
@@ -6,16 +7,16 @@ function Category({ category }) {
     const fixedIcon = "https://quiz-7.com"+icon;
 
     return (
-      <div>
+      <div className={style.container}>
         <NavLink to={`/question/${title}`} style={{textDecoration: "none", color: "black"}}>
-          <div>
+          <div className={style.categoryImg}>
             <img 
               src={fixedIcon}
               alt={title}
             />
           </div>
-
-          <div>
+          <hr className={style.hr}/>
+          <div className={style.infoCategory}>
             <h5>{title}</h5>
             <h6>{questions} questions</h6>
           </div>

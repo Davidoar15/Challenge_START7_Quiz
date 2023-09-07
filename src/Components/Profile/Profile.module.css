@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.initialMsj {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.msj > h2{
+    color: #1C1C1C;
+    font-family: Arial;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px
+}
+.msj > p {
+    color: #737373;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.profileImg {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #FF9F41; ;
+}
+.profileImg > img {
+    width: 100%;
+    height: auto;
+}
+
+.records {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.trophyData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.trophy {
+    width: 32px;
+    height: 32px;
+}
+.trophy > img {
+    width: 100%;
+    height: auto;
+}
+
+.coinData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.coin {
+    width: 32px;
+    height: 32px;
+}
+.coin > img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    text-align: left;
+}
+.info > h6 {
+    color: #323232;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.info > h5 {
+    color: #3EB8D4;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+}
+
+hr {
+    height: 30px;
+}
+
+
+@media (max-width: 390px) {
+    .records {
+        width: 80%;
+    }
+}
+
+@media (max-width: 385px) {
+    .msj > p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 353px) {
+    .msj {
+        width: 70%;
+    }
+}
+
+@media (max-width: 315px) {
+    .info > h6 {
+        font-size: 10px;
+    }
+    .info > h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    .trophyData {
+        gap: 5px
+    }
+
+    .coinData {
+        gap: 5px;
+    }
+
+    .msj > h2 {
+        font-size: 1.2rem;
+    }
+    .msj > p {
+        font-size: 11px;
+    }
+}

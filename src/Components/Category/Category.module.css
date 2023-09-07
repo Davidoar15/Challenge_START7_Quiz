@@ -1,0 +1,45 @@
+.container {
+    width: 155px;
+    height: 185px;
+}
+
+.categoryImg {
+    width: 96px;
+    height: 96px;
+    margin-left: 20px;
+    z-index: 2;
+}
+.categoryImg > img {
+    width: 100%;
+    height: auto;
+}
+
+.hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 73px;
+    height: 8px;
+    margin-left: 32px;
+    fill: rgba(0, 0, 0, 0.479);
+    filter: blur(10.873126983642578px);
+}
+
+.infoCategory {
+    color: #1C1C1C;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 90px 0px 1px 10px;
+    margin: -90px 0px 0px 10px;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.295);
+}
+.infoCategory > h5 {
+    margin-bottom: 10px;
+}
+.infoCategory > h6 {
+    margin-top: 0;
+}
