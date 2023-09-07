@@ -57,6 +57,6 @@ El desafío consiste en maquetar dos pantallas de una app de quiz y agregar la f
 3. https://quiz-7.com/media/calendar.png
 4. https://quiz-7.com/media/chemistry.png
 5. https://quiz-7.com/media/dna.png
+7. https://quiz-7.com/media/map.png
 
 ## Autor: David Olivo Alfonso Rodríguez
-7. https://quiz-7.com/media/map.png
