@@ -1,9 +1,10 @@
 import errorImage from '../../assets/Survey-error-image.png';
+import style from "./Error.module.css"
 
 function Error() {
 
   return (
-    <div>
+    <div className={style.container}>
         <div style={{width: "200px", height: "auto"}}>
           <img style={{width: "100%", height: "100%"}} src={errorImage} alt='Page Error'/>
         </div>

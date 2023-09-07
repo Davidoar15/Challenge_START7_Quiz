@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-family: Arial;
+    margin-left: 10px;
+    margin-right: 10px;
+}
