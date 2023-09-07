@@ -119,36 +119,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, { getSports })(QuestionSports);
-
-/*import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
-import { getSports } from "../../Redux/actions";
-
-function QuestionSports({ sports, getSports }) {
-  
-  const [initialFetch, setInitialFetch] = useState(false);
-
-  useEffect(() => {
-      if (!initialFetch && !sports.length) {
-        getSports();
-        setInitialFetch(true);
-      }
-  }, [sports, getSports, initialFetch]);
-
-  const questions = sports;
-  console.log(questions)
-
-    return (
-      <div>
-        <h1>Questions Sports</h1>
-      </div>
-    )
-  }
-  
-  const mapStateToProps = (state) => {
-    return {
-        sports: state.sports
-    };
-};
-
-export default connect(mapStateToProps, { getSports })(QuestionSports);*/
