@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 function Category({ category }) {
 
@@ -6,17 +7,19 @@ function Category({ category }) {
 
     return (
       <div>
-        <div>
-          <img 
-            src={fixedIcon}
-            alt={title}
-          />
-        </div>
+        <NavLink to={`/question/${title}`} style={{textDecoration: "none", color: "black"}}>
+          <div>
+            <img 
+              src={fixedIcon}
+              alt={title}
+            />
+          </div>
 
-        <div>
-          <h5>{title}</h5>
-          <h6>{questions} questions</h6>
-        </div>
+          <div>
+            <h5>{title}</h5>
+            <h6>{questions} questions</h6>
+          </div>
+        </NavLink>
       </div>
     )
   }

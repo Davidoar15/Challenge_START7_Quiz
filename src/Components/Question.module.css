@@ -1,0 +1,21 @@
+.optionButton {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .correct {
+    background-color: #DCF8FF;
+    border-color: #3EB8D4;
+    color: #3EB8D4;
+  }
+  
+  .incorrect {
+    background-color: #FFDFDC;
+    border-color: #FF5341;
+    color: #FF5341;
+  }

@@ -44,10 +44,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, { getProfile, getCategories })(Home)
-
-/*
-  const initialState = {
-    profile: [],
-    categories: [],
-  };
-*/
