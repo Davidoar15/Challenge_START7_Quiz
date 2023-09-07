@@ -1,21 +1,530 @@
 .optionButton {
+  padding: 10px 10px;
+  margin: 10px;
+  width: 40%;
+  font-size: 16px;
+  font-family: Arial;
+  font-style: normal;
+  border: 2px solid #EFEFEF;
+  border-radius: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+.optionButton:hover{
+  border-color: #a5a5a5;
+}
+
+.correct {
+  background-color: #DCF8FF;
+  border-color: #3EB8D4;
+  color: #3EB8D4;
+}
+.correct:hover {
+  border-color: #3EB8D4;
+}
+
+.incorrect {
+  background-color: #FFDFDC;
+  border-color: #FF5341;
+  color: #FF5341;
+}
+.incorrect:hover {
+  border-color: #FF5341;
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerReset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerReset > h1 {
+  font-size: 2rem;
+  color: #1C1C1C;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 600;
+}
+.containerReset > p {
+  font-size: 1.5rem;
+  color: #1C1C1C;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.questionContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  width: 327px;
+  height: 194px;
+  border-radius: 16px;
+  background-color: #DCF8FF;
+}
+.containerQ > h1 {
+  color: #1C1C1C;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 600;
+}
+.containerQ > h2 {
+  color: #1C1C1C;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.btnMenu {
+  padding: 10px 10px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: Arial;
+  font-style: normal;
+  border: 1px solid #EFEFEF;
+  border-radius: 16px;
+  background-color: #3EB8D4;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonReset {
+  padding: 10px 10px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: Arial;
+  font-style: normal;
+  border: 1px solid #EFEFEF;
+  border-radius: 16px;
+  background-color: #3EB8D4;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonNext {
+  padding: 10px 10px;
+  margin: 10px;
+  width: 327px;
+  font-size: 16px;
+  font-family: Arial;
+  font-style: normal;
+  border: 1px solid #EFEFEF;
+  border-radius: 16px;
+  background-color: #3EB8D4;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 934px) {
+  .optionButton {
+    width: 327px;
     padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    background-color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
-  
-  .correct {
-    background-color: #DCF8FF;
-    border-color: #3EB8D4;
-    color: #3EB8D4;
+}
+
+@media (max-width: 440px) {
+  .optionButton {
+    width: 80%;
   }
-  
-  .incorrect {
-    background-color: #FFDFDC;
-    border-color: #FF5341;
-    color: #FF5341;
+
+  .containerQ {
+    width: 80%;
   }
+
+  .buttonNext {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerQ > h1 {
+    font-weight: 500;
+    font-size: 1.8em
+  }
+  .containerQ > h2 {
+    font-weight: 400;
+    font-size: 1.3em
+  }
+}
+
+@media (max-width: 310px) {
+  .containerQ > h1 {
+    font-weight: 500;
+    font-size: 1.6em
+  }
+  .containerQ > h2 {
+    font-weight: 400;
+    font-size: 1.1em
+  }
+}
+
+@media (height: 600px) {
+  .container {
+    margin-top: -10px
+  }
+
+  .buttonReset {
+    font-size: 20px;
+  }
+} 
+
+@media (width: 912px) and (height: 1368px) {
+  .container {
+    margin-top: 300px;
+  }
+
+  .optionButton {
+    padding: 20px 20px;
+    width: 50%;
+    font-size: 30px;
+  }
+
+  .containerQ > h1 {
+    font-weight: 500;
+    font-size: 2.2em
+  }
+  .containerQ > h2 {
+    font-weight: 400;
+    font-size: 1.7em
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .btnMenu {
+    font-size: 30px;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+
+  .buttonNext {
+    font-size: 30px;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) {
+  .container {
+    margin-top: 120px;
+  }
+
+  .optionButton {
+    padding: 15px 15px;
+    width: 50%;
+    font-size: 25px;
+  }
+
+  .containerQ > h1 {
+    font-weight: 500;
+    font-size: 2.2em
+  }
+  .containerQ > h2 {
+    font-weight: 400;
+    font-size: 1.7em
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .btnMenu {
+    font-size: 30px;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+
+  .buttonNext {
+    font-size: 30px;
+  }
+}
+
+@media (width: 820px) and (height: 1180px) {
+  .container {
+    margin-top: 200px;
+  }
+
+  .optionButton {
+    padding: 15px 15px;
+    width: 50%;
+    font-size: 25px;
+  }
+
+  .containerQ > h1 {
+    font-weight: 500;
+    font-size: 2.2em
+  }
+  .containerQ > h2 {
+    font-weight: 400;
+    font-size: 1.7em
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .btnMenu {
+    font-size: 30px;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+
+  .buttonNext {
+    font-size: 30px;
+  }
+}
+
+@media (height: 915px) {
+  .container {
+    margin-top: 120px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+}
+
+@media (height: 914px) {
+  .container {
+    margin-top: 120px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+}
+
+@media (height: 896px) {
+  .container {
+    margin-top: 100px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+}
+
+@media (height: 892px) {
+  .container {
+    margin-top: 100px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+}
+
+@media (height: 851px) {
+  .container {
+    margin-top: 100px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+}
+
+@media (height: 844px) {
+  .container {
+    margin-top: 100px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 20px;
+  }
+}
+
+@media (height: 800px) {
+  .container {
+    margin-top: 90px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 30px;
+  }
+}
+
+@media (height: 740px) {
+  .container {
+    margin-top: 50px;
+  }
+
+  .containerReset > h1 {
+    font-size: 2rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .containerReset > p {
+    font-size: 1.5rem;
+    color: #1C1C1C;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .buttonReset {
+    font-size: 20px;
+  }
+}

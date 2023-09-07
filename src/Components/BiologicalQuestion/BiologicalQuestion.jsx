@@ -70,22 +70,24 @@ function QuestionBiological({ biological, getBiological }) {
   }
 
   return (
-    <div>
+    <div className={style.container}>
       <div>
         <NavLink to={'/'}>
-          <button>Menu</button>
+          <button className={style.btnMenu}>Menú</button>
         </NavLink>
       </div>
       {showResult ? (
-        <div>
+        <div className={style.containerReset}>
           <h1>Resultados</h1>
-          <p>Puntaje: {score}</p>
-          <button onClick={restartQuiz}>Reiniciar Quiz</button>
+          <p>Puntaje: {score}/4</p>
+          <button onClick={restartQuiz} className={style.buttonReset}>Reiniciar Quiz</button>
         </div>
       ) : (
-        <div>
-          <h1>Pregunta {currentQuestionIndex + 1}</h1>
-          <h2>{biological[currentQuestionIndex].question}</h2>
+        <div className={style.questionContainer}>
+            <div className={style.containerQ}>
+                <h1>Pregunta {currentQuestionIndex + 1}</h1>
+                <h2>{biological[currentQuestionIndex].question}</h2>
+            </div>
           {shuffledOptions.map((option, index) => (
             <button
               key={index}
@@ -104,7 +106,7 @@ function QuestionBiological({ biological, getBiological }) {
             </button>
           ))}
           {userAnswer && (
-            <button onClick={handleNextQuestion}>Siguiente</button>
+            <button onClick={handleNextQuestion} className={style.buttonNext}>Siguiente</button>
           )}
         </div>
       )}
